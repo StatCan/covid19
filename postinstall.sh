@@ -63,14 +63,14 @@ wget -q --no-check-certificate 'https://docs.google.com/spreadsheets/d/1nKRkOwnG
 mkdir -p public/data
 
 # crawl data
-crawlers="1p3a-data iran-data"
+# crawlers="1p3a-data iran-data"
 
-for crawler in $crawlers; do
-    python3 data/${crawler}/crawler.py
-    if [ $? != 0 ]; then
-       exit 1
-    fi
-done
+# for crawler in $crawlers; do
+#     python3 data/${crawler}/crawler.py
+#     if [ $? != 0 ]; then
+#        exit 1
+#     fi
+# done
 
 # generate data in JSON format and include data in TOPOJSON maps
 data_processing_filenames="world_current world china china_overall world_dxy korea italy us us_1p3a france germany japan austria australia canada spain switzerland uk netherlands sweden poland norway iran portugal brazil malaysia chile belgium"
