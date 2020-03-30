@@ -3,11 +3,12 @@ FROM node:11-slim
 # Create app directory
 WORKDIR /usr/src/app
 
-RUN apt-get update -y && apt-get install -y python3 wget unzip python3-requests
+RUN apt-get update -y && \
+    apt-get install -y python3 \
+                       wget \
+                       unzip \
+                       python3-requests
 
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
 COPY . ./
 
 RUN npm install
