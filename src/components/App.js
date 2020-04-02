@@ -24,6 +24,7 @@ import us_map from '../data/us_map.yml'
 import * as str from '../utils/strings'
 import { updateDarkMode } from '../utils/utils'
 import { mapText } from '../utils/map_text'
+import { withTranslation } from 'react-i18next';
 
 const defaultState = {
     currentMap: 'WORLD',
@@ -152,7 +153,9 @@ class App extends Component {
 
     scaleToggle = (newScale) => this.setState({ scale: newScale })
 
-    languageToggle = () => this.setState({ lang: this.state.lang === 'en' ? 'zh' : 'en' })
+    languageToggle = () => this.setState({ 
+        lang: this.state.lang === 'en' ? 'zh' : 'en' 
+    })
 
     fullMapToggle = () => {
         this.setState({ fullMap: !this.state.fullMap })
@@ -193,6 +196,7 @@ class App extends Component {
         const { lang, dataLoaded, currentMap, fullMap, fullPlot, fullTree, darkMode } = this.state
         const fullScreenMode = fullMap ? 'map-full' : fullPlot ? 'plot-full' : fullTree ? 'tree-full' : ''
         const FullScreenIcon = fullMap ? AiOutlineFullscreenExit : AiOutlineFullscreen
+        const { t } = this.props;
 
         return (
             <div className={`App ${darkMode ? 'dark' : ''}`}>
