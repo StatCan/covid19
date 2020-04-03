@@ -10,12 +10,8 @@
 #     c. AZURE_CREDENTIALS with the output of `az ad sp create-for-rbac --sdk-auth`
 #
 # 2. Change the values for the REGISTRY_NAME, CLUSTER_NAME, CLUSTER_RESOURCE_GROUP and NAMESPACE environment variables (below).
-on:
-  # Trigger the workflow on push or pull request,
-  # but only for the master branch
-  push:
-    branches:
-      - master
+name: build
+on: [push, pull_request]
 
 # Environment variables available to all jobs and steps in this workflow
 env:
@@ -48,51 +44,8 @@ jobs:
     - run: |
         docker build -f Dockerfile -t ${{ env.REGISTRY_NAME }}.azurecr.io/covid:${{ github.sha }} .
         docker push ${{ env.REGISTRY_NAME }}.azurecr.io/covid:${{ github.sha }}
-    # Set the target Azure Kubernetes Service (AKS) cluster.
-    - uses: azure/aks-set-context@v1
+    # Scan image for vulnerabilities
+    - name: Scan image for vulnerabilities
+      uses: docker://docker.io/aquasec/trivy:0.2.1
       with:
-        creds: '${{ secrets.AZURE_CREDENTIALS }}'
-        cluster-name: ${{ env.CLUSTER_NAME }}
-        resource-group: ${{ env.CLUSTER_RESOURCE_GROUP }}
-    # Create imagepullsecret for Azure Container registry (ACR)
-    - uses: azure/k8s-create-secret@v1
-      with:
-        container-registry-url: ${{ env.REGISTRY_NAME }}.azurecr.io
-        container-registry-username: ${{ secrets.REGISTRY_USERNAME }}
-        container-registry-password: ${{ secrets.REGISTRY_PASSWORD }}
-        secret-name: ${{ env.REGISTRY_NAME }}-registry-connection
-        namespace: ${{ env.NAMESPACE }}
-    # Clone the Helm chart
-    - run: |
-        git clone https://github.com/statcan/charts.git
-        mkdir -p /home/runner/work/_temp/_github_home/
-        cp $KUBECONFIG /home/runner/work/_temp/_github_home/KUBECONFIG
-    # Deploy Helm chart
-    - uses: 'sylus/helm@master'
-      env:
-        KUBECONFIG: /github/home/KUBECONFIG
-      with:
-        release: 'covid'
-        namespace: 'web'
-        tiller-namespace: 'web'
-        chart: './charts/stable/covid'
-        token: '${{ github.token }}'
-        values: |
-          covid:
-            image:
-              repository: "${{ env.REGISTRY_NAME }}.azurecr.io/covid"
-              tag: "${{ github.sha }}"
-            ingress:
-              enabled: true
-              hosts:
-                - host: "covid19.covid.cloud.statcan.ca"
-                  paths:
-                    - "/*"
-              annotations:
-                kubernetes.io/ingress.class: istio
-            # destinationRule:
-            #   enabled: false
-            imagePullSecrets:
-              - name: "${{ env.REGISTRY_NAME }}-registry-connection"
-            annotations:
-              sidecar.istio.io/inject: "true"
+        args: --cache-dir /var/lib/trivy --exit-code 1 --severity CRITICAL --no-progress ${{ env.REGISTRY_NAME }}.azurecr.io/covid:${{ github.sha }}
