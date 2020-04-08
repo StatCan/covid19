@@ -1,381 +1,432 @@
 COVID19:
   en: COVID-19 Coronavirus Map
+  fr: Carte du coronavirus COVID-19
   zh: 新型冠状病毒肺炎疫情图
 LINEAR_SCALE:
   en: Linear
+  fr: Linéaire
   zh: 线性
 LOG_SCALE:
   en: log
+  fr: journal
   zh: 对数
 NEWCASE:
-  en: New
+  en: New Cases
+  fr: Nouveaux cas
   zh: 新增
 CONFIRMED:
   en: Confirmed
+  fr: Confirmé
   zh: 确诊
 DEATHS:
   en: Deaths
+  fr: Des morts
   zh: 死亡
 RECOVERED:
   en: Recovered
+  fr: Rétablie
   zh: 治愈
 ACTIVE:
   en: Active
+  fr: Actif
   zh: 现存确诊
 NEW_CONFIRMED:
   en: New Confirmed
+  fr: Nouveau confirmé
   zh: 新增确诊
 NEW_DEATHS:
   en: New Deaths
+  fr: Nouvelles morts
   zh: 新增死亡
 OVERALL:
   en: Overall
+  fr: Globale
   zh: 总体
 SUBREGIONS:
   en: Regions
+  fr: Régions
   zh: 各地区
 FATALITY_RATE:
   en: Fatality Rate
+  fr: Taux de mortalité
   zh: 病死率
 RECOVERY_RATE:
   en: Recovery Rate
+  fr: Taux de récupération
   zh: 治愈率
 REST:
   en: Rest
+  fr: Du repos
   zh: 其余
 CASES:
   en: Cases
+  fr: Affaires
   zh: 病例
 GROWTH_RATE:
   en: Growth Rate
+  fr: Taux de croissance
   zh: 增长率
 FATALITY_RECOVERY_RATE:
   en: Fatality/Recovery Rate
+  fr: Taux de mortalité / récupération
   zh: 病死率/治愈率
 ONE_VS_REST:
   en: One vs. Rest
+  fr: Un contre le Repos
   zh: 一对多比较
 FATALITY_LINE:
   en: Fatality Line
+  fr: Ligne de fatalité
   zh: 疫情轨迹线
 INFECTION_NUMBER:
   en: Number of Infections
+  fr: Nombre d'infections
   zh: 感染人数
 DEATH_NUMBER:
   en: Number of Deaths
+  fr: Nombre de décès
   zh: 死亡人数
 CASE_DOUBLING_TIME:
   en: Case Doubling Time
+  fr: Temps de doublement de cas
   zh: 病例倍增时间
 CASE_DOUBLING_TIME_IN_DAYS:
   en: Estimated Doubling Time (In Days)
-  zh: 倍增时间估值（天）
+  fr: Temps de doublement estimé (en jours)
+  zh: 估算倍增时间（天）
 DAYS:
   en: Days
+  fr: Journées
   zh: 天
 ESTIMATED_RO:
   en: Estimated R₀
-  zh: R₀估值
+  fr: R₀ estimé
+  zh: 估算R₀
 ESTIMATED_RO_SEIR:
   en: Estimated R₀ (Based on SEIR)
-  zh: R₀估值（基于SEIR模型）
+  fr: R₀ estimé (basé sur SEIR)
+  zh: 估算R₀（基于SEIR模型）
 MOST_AFFECTED_SUBREGIONS:
   en: Most Affected
+  fr: Les plus touchés
   zh: 受影响程度排序
 SUBREGION_ACTIVE_STREAM:
   en: Stream of Active Cases
+  fr: Flux de cas actifs
   zh: 现存确诊病例流图
 SUBREGION_FATALITY:
   en: Fatality
+  fr: Fatalité
   zh: 病死率
 SUBREGION:
   en: Cases
+  fr: Étuis
   zh: 病例
 SUBREGION_SHIFTED:
   en: Cases (Shifted)
+  fr: Cas (décalés)
   zh: 病例（基于天数）
 SUBREGION_STREAM:
   en: Stream of Cases
+  fr: Flux de cas
   zh: 病例流图
 TYPE:
   en: Type
+  fr: Type
   zh: 类型
 Y_AXIS:
   en: Y-Axis
+  fr: Axe Y
   zh: Y轴
 SCALE:
   en: Scale
+  fr: Échelle
   zh: 尺度
 CUMULATIVE:
   en: Total
+  fr: Totale
   zh: 累积
 DAILY:
   en: Daily
+  fr: Quotidien
   zh: 新增
 RATE:
   en: Rate
+  fr: Taux
   zh: 病死率
 CASE_NUMBERS:
   en: Cases
+  fr: Affaires
   zh: 病例数
 DEATH_NUMBER2:
   en: Deaths
+  fr: Des morts
   zh: 死亡数
 PERCENT:
   en: Percent
+  fr: Pour cent
   zh: 百分比
 COMPARISONS:
-  en: Comparsions
+  en: Comparisons
+  fr: Comparaisons
   zh: 比较
 SHOW:
   en: Show
+  fr: Montrer
   zh: 显示
 HIDE:
   en: Hide
+  fr: Cacher
   zh: 隐藏
 MOVING_AVERAGE:
   en: Moving Average
+  fr: Moyenne mobile
   zh: 移动平均
 THREE_DAYS:
   en: 3 Days
+  fr: 3 jours
   zh: 3日
 FIVE_DAYS:
   en: 5 Days
+  fr: 5 jours
   zh: 5日
 DAY_0:
   en: Day 0
+  fr: Jour 0
   zh: 第0天
 TEN_CASES:
   en: 10 Cases
+  fr: 10 cas
   zh: 10例
 HUNDRED_CASES:
   en: 100 Cases
+  fr: 100 cas
   zh: 100例
 DAYS_AFTER_10_CASES:
   en: Days since 10 cases
+  fr: Jours depuis 10 cas
   zh: 病例超过10之后的天数
 DAYS_AFTER_100_CASES:
   en: Days since 100 cases
+  fr: Jours depuis 100 cas
   zh: 病例超过100之后的天数
 REGION:
   en: Region
+  fr: Région
   zh: 地区
 BUBBLES:
   en: Circles
+  fr: Cercles
   zh: 气泡
 TABLE:
   en: Table
+  fr: Table
   zh: 表格
 OTHERS:
   en: Others
+  fr: Autres
   zh: 其余地区
 WORLD_MAP:
   en: Global
+  fr: Globale
   zh: 全球
 CHINA_MAP1:
   en: China (Provinces)
+  fr: Chine (Provinces)
   zh: 中国（省级）
 CHINA_MAP2:
   en: China (Cities)
+  fr: Chine (Villes)
   zh: 中国（地级）
 KOREA_MAP:
   en: South Korea
+  fr: Corée du Sud
   zh: 韩国
 ITALY_MAP:
-  en: Italy (Regions)
-  zh: 意大利（大区级）
-ITALY_MAP2:
-  en: Italy (Provinces)
-  zh: 意大利（省级）
+  en: Italy
+  fr: Italie
+  zh: 意大利
 US_MAP:
   en: US (States)
+  fr: États-Unis (États)
   zh: 美国（州级）
 US_MAP2:
   en: US (Counties)
+  fr: États-Unis (comtés)
   zh: 美国（县级）
 FRANCE_MAP:
   en: France
+  fr: France
   zh: 法国
 GERMANY_MAP:
   en: Germany
+  fr: Allemagne
   zh: 德国
 JAPAN_MAP:
   en: Japan
+  fr: Japon
   zh: 日本
 AUSTRIA_MAP:
   en: Austria
+  fr: L'Autriche
   zh: 奥地利
 AUSTRALIA_MAP:
   en: Australia
+  fr: Australie
   zh: 澳大利亚
 CANADA_MAP:
   en: Canada
+  fr: Canada
   zh: 加拿大
 SPAIN_MAP:
   en: Spain
+  fr: Espagne
   zh: 西班牙
 SWITZERLAND_MAP:
   en: Switzerland
+  fr: Suisse
   zh: 瑞士
 UK_MAP:
   en: United Kingdom
+  fr: Royaume-Uni
   zh: 英国
 NETHERLANDS_MAP:
   en: Netherlands
+  fr: Pays-Bas
   zh: 荷兰
 SWEDEN_MAP:
   en: Sweden
+  fr: Suède
   zh: 瑞典
 POLAND_MAP:
   en: Poland
+  fr: Pologne
   zh: 波兰
 NORWAY_MAP:
   en: Norway
+  fr: Norvège
   zh: 挪威
 IRAN_MAP:
   en: Iran
+  fr: Iran
   zh: 伊朗
 PORTUGAL_MAP:
   en: Portugal
+  fr: Portugal
   zh: 葡萄牙
 BRAZIL_MAP:
   en: Brazil
+  fr: Brésil
   zh: 巴西
 MALAYSIA_MAP:
   en: Malaysia
+  fr: Malaisie
   zh: 马来西亚
 CHILE_MAP:
   en: Chile
+  fr: Chili
   zh: 智利
 BELGIUM_MAP:
   en: Belgium
+  fr: Belgique
   zh: 比利时
-CZECHIA_MAP:
-  en: Czechia
-  zh: 捷克
-RUSSIA_MAP:
-  en: Russia
-  zh: 俄罗斯
-MEXICO_MAP:
-  en: Mexico
-  zh: 墨西哥
-ECUADOR_MAP:
-  en: Ecuador
-  zh: 厄瓜多尔
-ARGENTINA_MAP:
-  en: Argentina
-  zh: 阿根廷
-INDIA_MAP:
-  en: India
-  zh: 印度
-PERU_MAP:
-  en: Peru
-  zh: 秘鲁
-IRELAND_MAP:
-  en: Ireland
-  zh: 爱尔兰
-SOUTH_AFRICA_MAP:
-  en: South Africa
-  zh: 南非
-PHILIPPINES_MAP:
-  en: Philippines
-  zh: 菲律宾
-ROMANIA_MAP:
-  en: Romania
-  zh: 罗马尼亚
-INDONESIA_MAP:
-  en: Indonesia
-  zh: 印度尼西亚
-SAUDI_ARABIA_MAP:
-  en: Saudi Arabia
-  zh: 沙特阿拉伯
-THAILAND_MAP:
-  en: Thailand
-  zh: 泰国
-COLOMBIA_MAP:
-  en: Colombia
-  zh: 哥伦比亚
-HONGKONG_MAP:
-  en: Hong Kong
-  zh: 香港
-PAKISTAN_MAP:
-  en: Pakistan
-  zh: 巴基斯坦
 ASIA:
   en: Asia
+  fr: Asie
   zh: 亚洲
 NORTH_AMERICA:
   en: North America
+  fr: Amérique du Nord
   zh: 北美洲
 SOUTH_AMERICA:
   en: South America
+  fr: Amérique du Sud
   zh: 南美洲
 EUROPE:
   en: Europe
+  fr: Europe
   zh: 欧洲
 OCEANIA:
   en: Oceania
+  fr: Océanie
   zh: 大洋洲
-AFRICA:
-  en: Africa
-  zh: 非洲
 TRANSMISSIONS:
   en: Transmissions
+  fr: Les transmissions
   zh: 传播路线
 TRANSMISSION_NETWORK:
   en: Transmission Graph
+  fr: Graphique de transmission
   zh: 疫情传播图
 RESET:
   en: Reset
+  fr: Réinitialiser
   zh: 重置
 DARK:
   en: Dark
+  fr: Foncée
   zh: 暗黑
 LIGHT:
   en: Light
+  fr: Lumière
   zh: 高亮
 NO_DATA:
   en: No Data
+  fr: Pas de données
   zh: 无数据
 LANGUAGE_HELP_TEXT:
   en: Switch language
+  fr: Changer de langue
   zh: 切换语言
 LINEAR_SCALE_HELP_TEXT:
   en: Switch to linear scale
+  fr: Passer à l'échelle linéaire
   zh: 切换至线性尺度
 LOG_SCALE_HELP_TEXT:
   en: Switch to logarithmic scale
+  fr: Passer à l'échelle logarithmique
   zh: 切换至对数尺度
 DARK_MODE_HELP_TEXT:
   en: Switch to dark mode
+  fr: Passer en mode sombre
   zh: 切换至暗黑模式
 LIGHT_MODE_HELP_TEXT:
   en: Switch to light mode
+  fr: Passer en mode lumière
   zh: 切换至高亮模式
 RESET_HELP_TEXT:
   en: Reset map
+  fr: Réinitialiser la carte
   zh: 重置地图
 SEARCH:
   en: Search
+  fr: Chercher
   zh: 搜索
 NO_RESULT:
   en: No result found
+  fr: Aucun résultat trouvé
   zh: 无搜索结果
 MORE_REGIONS_HELP_TEXT:
   en: Show subregions
+  fr: Afficher les sous-régions
   zh: 显示次级行政区划
 LESS_REGIONS_HELP_TEXT:
   en: Hide subregions
+  fr: Masquer les sous-régions
   zh: 隐藏次级行政区划
 PLOT_SETTINGS:
   en: Configure Plots
+  fr: Configurer les tracés
   zh: 图表设置
 ABOUT:
   en: About
+  fr: Vers
   zh: 关于
 SOURCE_CODE:
   en: Source code
+  fr: Code source
   zh: 源代码
 ABOUT_TEXT:
-  en: Data are taken from <a href="https://ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank">Ding Xiang Yuan</a> (compiled by <a href="https://github.com/BlankerL/DXY-COVID-19-Data" target="_blank">COVID-19/2019-nCoV Time Series Infection Data Warehouse</a>), <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">Johns Hopkins CSSE</a>, <a href="https://coronavirus.1point3acres.com/en" target="_blank">1Point3Acres</a>, and <a href="https://github.com/stevenliuyi/covid19/blob/master/README.md" target="_blank">other various sources</a>. Logo is from <a href="https://icons8.com" target="_blank">Icons8</a>. The code of this project is <a href="https://github.com/stevenliuyi/covid19" target="_blank">open-sourced on Github</a> with the MIT License.<br/>If you'd like to support the work and buy me a ☕, I greatly appreciate it!
-  zh: 数据来源于<a href="https://ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank">丁香园</a>（由<a href="https://github.com/BlankerL/DXY-COVID-19-Data" target="_blank">2019新型冠状病毒疫情时间序列数据仓库</a>维护）、<a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">约翰霍普金斯大学系统科学与工程中心</a>、<a href="https://coronavirus.1point3acres.com/zh" target="_blank">一亩三分地</a>等提供的<a href="https://github.com/stevenliuyi/covid19/blob/master/README.md" target="_blank">数据集</a>。图标由<a href="https://icons8.com" target="_blank">Icons8</a>提供。本项目<a href="https://github.com/stevenliuyi/covid19" target="_blank">在GitHub上开源</a>并以MIT协议释出。<br/>如果愿意支持本项目的开发，可以请我喝杯☕～
+  en: Data are taken from <a href="https://ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank">Ding Xiang Yuan</a> (compiled by <a href="https://github.com/BlankerL/DXY-COVID-19-Data" target="_blank">COVID-19/2019-nCoV Time Series Infection Data Warehouse</a>), <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">Johns Hopkins CSSE</a>, <a href="https://coronavirus.1point3acres.com/en" target="_blank">1Point3Acres</a>, and <a href="https://github.com/stevenliuyi/covid19/blob/master/README.md" target="_blank">other various sources</a>. Logo is from <a href="https://icons8.com" target="_blank">Icons8</a>. The code of this project is <a href="https://github.com/stevenliuyi/covid19" target="_blank">open-sourced on Github</a> with the MIT License.
+  fr: Les données sont extraites de <a href="https://ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank">Ding Xiang Yuan</a> (compilées par <a href="https://github.com/BlankerL/DXY-COVID-19-Data" target="_blank">COVID-19/2019-nCoV Time Series Infection Data Warehouse</a>), <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">Johns Hopkins CSSE</a>, <a href="https://coronavirus.1point3acres.com/en" target="_blank">1Point3Acres</a>, and <a href="https://github.com/stevenliuyi/covid19/blob/master/README.md" target="_blank">d'autres sources diverses</a>. Le logo provient des <a href="https://icons8.com" target="_blank">Icons8</a>. Le code de ce projet est <a href="https://github.com/stevenliuyi/covid19" target="_blank">open-source sur Github</a> avec la licence MIT.
+  zh: 数据来源于<a href="https://ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank">丁香园</a>（由<a href="https://github.com/BlankerL/DXY-COVID-19-Data" target="_blank">2019新型冠状病毒疫情时间序列数据仓库</a>维护）、<a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">约翰霍普金斯大学系统科学与工程中心</a>、<a href="https://coronavirus.1point3acres.com/zh" target="_blank">一亩三分地</a>等提供的<a href="https://github.com/stevenliuyi/covid19/blob/master/README.md" target="_blank">数据集</a>。图标由<a href="https://icons8.com" target="_blank">Icons8</a>提供。本项目<a href="https://github.com/stevenliuyi/covid19" target="_blank">在GitHub上开源</a>并以MIT协议释出.
