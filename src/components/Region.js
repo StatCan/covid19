@@ -61,7 +61,7 @@ export default class Region extends Component {
 
     componentDidMount() {
         const options = this.generateOptions([])
-        this.setState({ options, value: { value: this.props.lang === 'zh' ? str.GLOBAL_ZH : str.GLOBAL_EN } })
+        this.setState({ options, value: { value: this.props.lang === 'fr' ? str.GLOBAL_FR : str.GLOBAL_EN } })
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -247,7 +247,7 @@ export default class Region extends Component {
         if (this.props.data == null) return
 
         const MoreIcon = countryOnly ? GoUnfold : GoFold
-
+        
         return (
             <div className="current-region-wrap">
                 <RegionDropdown
