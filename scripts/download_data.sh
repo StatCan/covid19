@@ -21,11 +21,11 @@ wget -q 'https://datasource.kapsarc.org/explore/dataset/saudi-arabia-coronavirus
 mkdir -p public/data
 
 # crawl data
-crawlers="1p3a-data iran-data romania-data thailand-data"
+# crawlers="1p3a-data iran-data romania-data thailand-data"
 
-for crawler in $crawlers; do
-    python3 data/${crawler}/crawler.py
-    if [ $? != 0 ]; then
-       exit 1
-    fi
-done
+# for crawler in $crawlers; do
+#     python3 data/${crawler}/crawler.py
+#     if [ $? != 0 ]; then
+#        exit 1
+#     fi
+# done

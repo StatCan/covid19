@@ -246,6 +246,10 @@ ITALY_MAP:
   en: Italy
   fr: Italie
   zh: 意大利
+ITALY_MAP2:
+  en: Italy (Provinces)
+  fr: Italie (Provinces)
+  zh: 意大利（省级）
 US_MAP:
   en: US (States)
   fr: États-Unis (États)
@@ -330,6 +334,70 @@ BELGIUM_MAP:
   en: Belgium
   fr: Belgique
   zh: 比利时
+CZECHIA_MAP:
+  en: Czechia
+  fr: Tchéquie
+  zh: 捷克
+RUSSIA_MAP:
+  en: Russia
+  fr: Russie
+  zh: 俄罗斯
+MEXICO_MAP:
+  en: Mexico
+  fr: Mexique
+  zh: 墨西哥
+ECUADOR_MAP:
+  en: Ecuador
+  fr: Équateur
+  zh: 厄瓜多尔
+ARGENTINA_MAP:
+  en: Argentina
+  fr: Argentine
+  zh: 阿根廷
+INDIA_MAP:
+  en: India
+  fr: Inde
+  zh: 印度
+PERU_MAP:
+  en: Peru
+  fr: Pérou
+  zh: 秘鲁
+IRELAND_MAP:
+  en: Ireland
+  fr: Irlande
+  zh: 爱尔兰
+SOUTH_AFRICA_MAP:
+  en: South Africa
+  fr: Afrique du Sud
+  zh: 南非
+PHILIPPINES_MAP:
+  en: Philippines
+  fr: Philippines
+  zh: 菲律宾
+ROMANIA_MAP:
+  en: Romania
+  fr: Roumanie
+  zh: 罗马尼亚
+INDONESIA_MAP:
+  en: Indonesia
+  fr: Indonésie
+  zh: 印度尼西亚
+SAUDI_ARABIA_MAP:
+  en: Saudi Arabia
+  fr: Arabie Saoudite
+  zh: 沙特阿拉伯
+THAILAND_MAP:
+  en: Thailand
+  fr: Thaïlande
+  zh: 泰国
+COLOMBIA_MAP:
+  en: Colombia
+  fr: Colombie
+  zh: 哥伦比亚
+HONGKONG_MAP:
+  en: Hong Kong
+  fr: Hong Kong
+  zh: 香港
 ASIA:
   en: Asia
   fr: Asie
@@ -350,6 +418,10 @@ OCEANIA:
   en: Oceania
   fr: Océanie
   zh: 大洋洲
+AFRICA:
+  en: Africa
+  fr: Afrique
+  zh: 非洲
 TRANSMISSIONS:
   en: Transmissions
   fr: Les transmissions
