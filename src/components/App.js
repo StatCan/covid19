@@ -200,7 +200,7 @@ class App extends Component {
         return (
             <div className={`App ${darkMode ? 'dark' : ''}`}>
                 <div className="jumbotron">
-                <p>This is an example visualization. The information displayed may be out-of-date or inaccurate.</p>
+                    <p>This is an example visualization. The information displayed may be out-of-date or inaccurate.</p>
                 </div>
                 <Helmet>
                     <title>{i18n.COVID19[lang]}</title>
