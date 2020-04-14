@@ -625,6 +625,13 @@ ul.map-nav-bar:not(:hover) li.current {
     margin-bottom: 10px;
 }
 
+.jumbotron{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: 	#404040;
+    color: white;
+}
+
 .nav-bar-icon {
     color: #555;
     margin-left: 10px;
