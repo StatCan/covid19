@@ -34,16 +34,18 @@ jobs:
         git submodule sync --recursive
         git -c "http.extraheader=$auth_header" -c protocol.version=2 submodule update --init --force --recursive --depth=1
         # git submodule update --remote
+
     # Connect to Azure Container registry (ACR)
     - uses: azure/docker-login@v1
       with:
         login-server: ${{ env.REGISTRY_NAME }}.azurecr.io
         username: ${{ secrets.REGISTRY_USERNAME }}
         password: ${{ secrets.REGISTRY_PASSWORD }}
+
     # Container build and push to a Azure Container registry (ACR)
     - run: |
         docker build -f Dockerfile -t ${{ env.REGISTRY_NAME }}.azurecr.io/covid:${{ github.sha }} .
-        docker push ${{ env.REGISTRY_NAME }}.azurecr.io/covid:${{ github.sha }}
+
     # # Scan image for vulnerabilities
     # - name: Scan image for vulnerabilities
     #   uses: docker://docker.io/aquasec/trivy:0.2.1
