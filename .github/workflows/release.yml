@@ -38,6 +38,13 @@ jobs:
         git -c "http.extraheader=$auth_header" -c protocol.version=2 submodule update --init --force --recursive --depth=1
         # git submodule update --remote
 
+    - name: Free disk space
+      run: |
+        sudo swapoff -a
+        sudo rm -f /swapfile
+        sudo apt clean
+        df -h
+
     # Connect to Azure Container registry (ACR)
     - uses: azure/docker-login@v1
       with:
@@ -66,11 +73,12 @@ jobs:
         secret-name: ${{ env.REGISTRY_NAME }}-registry-connection
         namespace: ${{ env.NAMESPACE }}
 
-    # # Scan image for vulnerabilities
-    # - name: Scan image for vulnerabilities
-    #   uses: docker://docker.io/aquasec/trivy:0.2.1
-    #   with:
-    #     args: --cache-dir /var/lib/trivy --severity CRITICAL --no-progress ${{ env.REGISTRY_NAME }}.azurecr.io/covid:${{ github.sha }}
+    # Scan image for vulnerabilities
+    - uses: Azure/container-scan@v0
+      with:
+        image-name: ${{ env.REGISTRY_NAME }}.azurecr.io/covid:${{ github.sha }}
+        severity-threshold: CRITICAL
+        run-quality-checks: false
 
     # Clone the Helm chart
     - run: |
